@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(242, 255, 235);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding:1rcap;
+        }
+        h1{
+            color: rgb(125, 93, 75);
+            background-color: beige;
+            padding-left: 20ch;
+            border-radius: 2cqh;
+           
+            padding-right: 50ch;
+            font-family: initial;
+            display: flex;
+            gap: 10px;
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 ><img src="image\logo-1.png" alt="lpu" width="180">LOVELY PROFFESIONAL UNIVERSITY </h1>
+    
+    <form action="" method="post">
+        <label for="uname">Enter Name :</label>
+        <input type="text" name="uname" id="uname" size="19" maxlength="7" placeholder="Enter name" required>
+        <br>
+        <br>
+        <label for="email">Enter Email :</label>
+        <input type="email" name="email" id="email" required >
+        <br>
+        <br>
+        <label for="pass">Enter Password :</label>
+        <input type="Password" name="pass" id="pass" required> 
+        <br>
+        <br>
+        <label for ="review"> Write a review</label><br>
+        <textarea name ="review" id="review" rows="10" col="50"> this is a  good movie </textarea>
+        <br>
+        <label for ="hobby"> choose your hobby: </label>
+        <input type="checkbox" name ="hobby1" id ="hobby" value="garden"> Gardening
+        <input type="checkbox" name ="hobby2" id="hobby" value="playing"> playing
+        <input type="checkbox" name ="hobby3" id="hobby" value="singing"> singing
+        <br>
+
+        <label for="pro">select your Programme</label>
+        <!-- <input type="checkbox" name="pro" id="pro" value="pro">B.tech -->
+        <input type="radio" name="pro" id="B.tech" name="pro">
+        <label for="B.tech">B.tech</label>
+        <input type="radio" name="pro" id="BCA">
+        <label for="BCA">BCA</label>
+        <input type="radio" name="pro" id="B.ed" checked>
+        <label for="B.ed">B.ed</label>
+        </label>
+        <br>
+        <br>
+        <label for="statesel" >Choose your State</label>
+        <select name="statesel" id="statesel" size="2" multiple>
+            <option value="choosestate">choose your state</option>
+            <option value="Bihar">Bihar </option>
+            <option value="Punjab">Punjab</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Utter pradesh">Uttar pradesh</option>
+        </select>
+        <br><br>
+        <label for="filesel">Choose your file</label>
+        <input  type="file" name="filesel" id="filesel">
+        <br><br>
+
+
+                <!-- <input type="submit" name="submitform" id="submitform" > -->
+                <input type="reset" name="resetform" id="resetform" value="Reset Form">
+                <br>
+                <input type="image" name="imgbtn" id="imgbtn" src="image\pngtree-click-the-red-submit-button-icon-vector-png-image_6674606.png" width="110" >
+               
+
+
+    </form>
+</body>
+</html>

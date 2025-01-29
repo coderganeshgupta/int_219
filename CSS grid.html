@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(131, 177, 183);
+            border: 5px solid rgb(148, 103, 45);
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: 20% auto 50%;
+            grid-template-rows: 200px 300px 200px; */
+            grid-template:200px 100px  /auto auto 40%;
+            grid-gap: 10px;
+
+        }
+        .item{
+            border: 8px double rgb(139, 103, 92);
+            padding: 10px;
+            border-radius: 25px;
+            background-color: rgba(209, 204, 147, 0.452);
+            margin: 2px;
+        }
+        #i3{
+            grid-row-start: 1;
+            grid-row-end: span 2 ;
+            grid-row: 2/12;
+                 }
+        #i7{
+            grid-column-start: 3;
+            grid-column-end: span 2;
+            grid-column-gap: 20px; 
+            grid-gap: 20px ;
+        }
+        #i9{
+            grid-area: 4/3/span 1/ span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"> Item 1
+        </div>
+        <div class="item"> Item 2</div>
+        <div class="item"> Item 3</div>
+        <div class="item"> Item 4</div>
+        <div class="item" id="i3"> Item 5</div>
+        <div class="item"> Item 6</div>
+        <div class="item" id="i7"> Item 7</div>
+        <div class="item"> Item 8</div>
+        <div class="item" id="i9"> Item 9</div>
+
+
+    </div>
+</body>
+</html>
